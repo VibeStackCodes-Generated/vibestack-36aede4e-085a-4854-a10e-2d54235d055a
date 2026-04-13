@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(30 25% 97%);
+  --color-foreground: hsl(24 10% 15%);
+  --color-card: hsl(30 20% 95%);
+  --color-card-foreground: hsl(24 10% 15%);
+  --color-popover: hsl(30 20% 95%);
+  --color-popover-foreground: hsl(24 10% 15%);
+  --color-primary: hsl(24 60% 30%);
+  --color-primary-foreground: hsl(30 25% 97%);
+  --color-secondary: hsl(30 30% 88%);
+  --color-secondary-foreground: hsl(24 10% 15%);
+  --color-muted: hsl(30 15% 90%);
+  --color-muted-foreground: hsl(24 10% 45%);
+  --color-accent: hsl(35 80% 55%);
+  --color-accent-foreground: hsl(24 10% 10%);
+  --color-destructive: hsl(0 84.2% 60.2%);
+  --color-destructive-foreground: hsl(0 0% 98%);
+  --color-border: hsl(30 20% 85%);
+  --color-input: hsl(30 20% 85%);
+  --color-ring: hsl(24 60% 30%);
+  --color-chart-1: hsl(24 60% 30%);
+  --color-chart-2: hsl(35 80% 55%);
+  --color-chart-3: hsl(30 30% 50%);
+  --color-chart-4: hsl(20 50% 40%);
+  --color-chart-5: hsl(15 40% 35%);
+  --color-sidebar-background: hsl(30 25% 97%);
+  --color-sidebar-foreground: hsl(24 10% 15%);
+  --color-sidebar-primary: hsl(24 60% 30%);
+  --color-sidebar-primary-foreground: hsl(30 25% 97%);
+  --color-sidebar-accent: hsl(30 30% 88%);
+  --color-sidebar-accent-foreground: hsl(24 10% 15%);
+  --color-sidebar-border: hsl(30 20% 85%);
+  --color-sidebar-ring: hsl(24 60% 30%);
+  --radius: 0.625rem;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
